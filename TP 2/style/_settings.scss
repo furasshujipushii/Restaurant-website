@@ -1,0 +1,54 @@
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Poppins:wght@500&family=Roboto:wght@300&display=swap");
+
+$font1: "Allura", serif;
+$font2: "Poppins", sans-serif;
+$font3: "Roboto", sans-serif;
+
+$white: whitesmoke;
+$white2: rgba(255, 255, 255, 0.692);
+$black: rgb(15, 15, 15);
+$bg-color: rgb(34, 32, 30);
+$brown: rgb(199, 124, 53);
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  background-color: $bg-color;
+  text-align: center;
+  margin: 0 auto;
+  color: $black;
+}
+.chef-fork {
+  height: 20px;
+  width: 20px;
+  background: url(../img/ic-plate.png) center/cover;
+  margin: 0 auto;
+}
+h3 {
+  font-family: $font1;
+  color: $brown;
+  font-weight: 100;
+}
+h2 {
+  font-family: $font2;
+  text-transform: uppercase;
+}
+p,
+span {
+  font-family: $font3;
+}
+span {
+  font-weight: 600;
+}
+#price {
+  color: $brown;
+}
+a {
+  text-decoration: none;
+  color: $black;
+}
+li {
+  list-style: none;
+}

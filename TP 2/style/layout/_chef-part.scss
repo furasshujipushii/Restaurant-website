@@ -1,0 +1,70 @@
+.chef-part {
+  background: $white;
+  height: 280px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  @media screen and (max-width: 500px) {
+    display: grid;
+    grid-template-columns: 100%;
+  }
+  .chef-left {
+    max-height: 270px;
+    width: 95%;
+    height: 90%;
+    border: 1px dashed $brown;
+    margin: 10px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    #chef-img {
+      background: url(/img/avatar-01.jpg) center/cover;
+      height: 50px;
+      width: 50px;
+      border-radius: 150px;
+    }
+    h3 {
+      height: 8%;
+      font-size: 1.5em;
+    }
+    h2 {
+      font-size: 1em;
+    }
+    p {
+      margin: 15px 2px 5px;
+      font-size: 0.7em;
+      @media screen and (max-width: 430px) {
+        font-size: 0.5em;
+      }
+    }
+    h4 {
+      margin-top: 3px;
+      font-family: $font3;
+      font-size: 0.9em;
+    }
+    span {
+      text-transform: uppercase;
+      font-size: 0.7em;
+      font-family: $font2;
+      font-weight: 200;
+      color: rgba(128, 128, 128, 0.5);
+    }
+    .chef-fork {
+      margin-top: 5px;
+    }
+    .chef-name {
+      height: 20%;
+    }
+  }
+  .chef-right {
+    .chef-right-img {
+      width: 100%;
+      height: 100%;
+      max-height: 280px;
+      background: url(/img/store-01.jpg) center/cover;
+      @media screen and (max-width: 500px) {
+        display: none;
+      }
+    }
+  }
+}

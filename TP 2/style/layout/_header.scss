@@ -1,0 +1,108 @@
+header {
+  height: 100vh;
+  width: 100%;
+  position: relative;
+  background: url(/img/bg-slider-06.jpg) center/cover;
+
+  nav {
+    padding: 40px 0;
+    width: 80%;
+    display: grid;
+    grid-template-columns: 13% 62% 25%;
+    margin: 0 auto;
+    justify-content: space-between;
+    align-items: center;
+    color: $white;
+    @media screen and(max-width:580px) {
+      display: grid;
+      grid-template-columns: 50% 50%;
+    }
+    #nav-menu {
+      @media screen and(max-width:580px) {
+        display: none;
+      }
+    }
+    h3 {
+      color: $white;
+      text-align: left;
+      font-size: 1.8em;
+      font-weight: 800;
+      cursor: pointer;
+      transition: 0.3s ease;
+      @media screen and(max-width:580px) {
+        text-align: center;
+      }
+      &:hover {
+        color: $brown;
+        transform: scale(1.2);
+      }
+    }
+    ul {
+      display: flex;
+
+      li {
+        padding-left: 10px;
+        text-transform: uppercase;
+        font-family: $font3;
+        font-size: 0.6em;
+        margin: 0 auto;
+        cursor: pointer;
+        transition: 0.3s ease;
+        opacity: 0.6;
+
+        &:hover {
+          opacity: 1;
+          transform: scale(1.2);
+        }
+      }
+    }
+    #nav-icons {
+      width: 100%;
+      padding-right: 0;
+      padding-left: 15px;
+      li {
+        padding-left: 20px;
+        font-size: 1.1em;
+        @media screen and(max-width:580px) {
+          width: 33%;
+          padding: 0;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+  .header-text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 60%;
+    h3 {
+      font-size: 2em;
+    }
+    h1 {
+      font-size: 3em;
+      letter-spacing: 15px;
+      font-family: $font2;
+      color: $white;
+      text-transform: uppercase;
+      @media screen and(max-width:580px) {
+        font-size: 2em;
+      }
+    }
+    #header-fork {
+      height: 30px;
+      width: 30px;
+      background: url(/img/ic-plate-big.png) center/cover;
+      margin: 20px auto;
+    }
+    p {
+      margin: 20px 0;
+      color: $white2;
+      text-transform: uppercase;
+      font-size: 0.75em;
+      font-weight: 800;
+      letter-spacing: 3px;
+    }
+  }
+}

@@ -1,0 +1,222 @@
+.menu-discover {
+  width: 100%;
+  height: 290px;
+  position: relative;
+  display: flex;
+  margin-top: 30px;
+  flex-direction: column;
+  .chef-fork {
+    margin-top: 20px;
+    height: 30px;
+    width: 30px;
+  }
+  ul {
+    padding-top: 30px;
+    display: flex;
+    width: 60%;
+    margin: 0 auto;
+    align-items: center;
+    justify-content: space-between;
+    li {
+      color: $white;
+      font-family: $font3;
+      font-size: 0.8em;
+      border-bottom: 1px solid $white;
+      padding-bottom: 8px;
+      cursor: pointer;
+      transition: 0.3s ease;
+      &:hover {
+        color: $brown;
+        border-bottom: 1px solid $brown;
+        transform: scale(1.1);
+        opacity: 0.8;
+      }
+    }
+  }
+  h3 {
+    font-size: 1.8em;
+  }
+}
+.menu {
+  height: 350px;
+  background: url(/img/bg-menu-01.jpg) center/cover;
+  position: relative;
+  margin-top: 80px;
+  .menu-container {
+    padding: 15px;
+    border-top: 5px solid $brown;
+    position: absolute;
+    height: 520px;
+    width: 80%;
+    top: -60%;
+    left: 50%;
+    transform: translateX(-50%);
+    background: $white;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    @media screen and (max-width: 530px) {
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    }
+    .dish {
+      position: relative;
+      border-bottom: 1px dashed rgba(0, 0, 0, 0.37);
+      display: grid;
+      grid-template-columns: 25% 55% 20%;
+      @media screen and (max-width: 530px) {
+        display: grid;
+        grid-template-columns: 20% 60% 20%;
+      }
+      .dish-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: left;
+        padding-left: 5px;
+        span {
+          font-size: 0.7em;
+          text-transform: uppercase;
+        }
+        p {
+          font-size: 0.8em;
+        }
+      }
+      #price {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-right: 15px;
+      }
+      .dish-img1 {
+        border-radius: 150px;
+        height: 80px;
+        width: 80px;
+        margin: auto -10px;
+        background: url(/img/dish-item-01.jpg) center/cover;
+        @media screen and (max-width: 750px) {
+          height: 60px;
+          width: 60px;
+        }
+        @media screen and (max-width: 530px) {
+          height: 40px;
+          width: 40px;
+          margin: auto 0px;
+        }
+      }
+      .dish-img2 {
+        border-radius: 150px;
+        height: 80px;
+        width: 80px;
+        margin: auto -10px;
+        background: url(/img/dish-item-02.jpg) center/cover;
+        @media screen and (max-width: 750px) {
+          height: 60px;
+          width: 60px;
+        }
+        @media screen and (max-width: 530px) {
+          height: 40px;
+          width: 40px;
+          margin: auto 0px;
+        }
+      }
+      .dish-img3 {
+        border-radius: 150px;
+        height: 80px;
+        width: 80px;
+        margin: auto -10px;
+        background: url(/img/dish-item-03.jpg) center/cover;
+        @media screen and (max-width: 750px) {
+          height: 60px;
+          width: 60px;
+        }
+        @media screen and (max-width: 530px) {
+          height: 40px;
+          width: 40px;
+          margin: auto 0px;
+        }
+      }
+      .dish-img4 {
+        border-radius: 150px;
+        height: 80px;
+        width: 80px;
+        margin: auto -10px;
+        background: url(/img/dish-item-04.jpg) center/cover;
+        @media screen and (max-width: 750px) {
+          height: 60px;
+          width: 60px;
+        }
+        @media screen and (max-width: 530px) {
+          height: 40px;
+          width: 40px;
+          margin: auto 0px;
+        }
+      }
+      .dish-img5 {
+        border-radius: 150px;
+        height: 80px;
+        width: 80px;
+        margin: auto -10px;
+        background: url(/img/dish-item-05.jpg) center/cover;
+        @media screen and (max-width: 750px) {
+          height: 60px;
+          width: 60px;
+        }
+        @media screen and (max-width: 530px) {
+          height: 40px;
+          width: 40px;
+          margin: auto 0px;
+        }
+      }
+      .dish-img6 {
+        border-radius: 150px;
+        height: 80px;
+        width: 80px;
+        margin: auto -10px;
+        background: url(/img/dish-item-06.jpg) center/cover;
+        @media screen and (max-width: 750px) {
+          height: 60px;
+          width: 60px;
+        }
+        @media screen and (max-width: 530px) {
+          height: 40px;
+          width: 40px;
+          margin: auto 0px;
+        }
+      }
+      .dish-img7 {
+        border-radius: 150px;
+        height: 80px;
+        width: 80px;
+        margin: auto -10px;
+        background: url(/img/dish-item-07.jpg) center/cover;
+        @media screen and (max-width: 750px) {
+          height: 60px;
+          width: 60px;
+        }
+        @media screen and (max-width: 530px) {
+          height: 40px;
+          width: 40px;
+          margin: auto 0px;
+        }
+      }
+      .dish-img8 {
+        border-radius: 150px;
+        height: 80px;
+        width: 80px;
+        margin: auto -10px;
+        background: url(/img/dish-item-08.jpg) center/cover;
+        @media screen and (max-width: 750px) {
+          height: 60px;
+          width: 60px;
+        }
+        @media screen and (max-width: 530px) {
+          height: 40px;
+          width: 40px;
+          margin: auto 0px;
+        }
+      }
+    }
+  }
+}
